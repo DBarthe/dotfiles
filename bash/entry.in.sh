@@ -15,6 +15,7 @@ include_order=$(cat <<EOF
   prompt.in.sh
   ssh-agent.in.sh
   emacs-cleaner.in.sh
+  routing-phone-deviation.in.sh
 EOF
 )
 

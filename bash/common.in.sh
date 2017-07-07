@@ -26,3 +26,8 @@ retry_command () {
   done
   return $?
 }
+
+ensure_line_exists() {
+  grep -q -F "$1" "$2" \
+    || echo "$1" >> "$2"
+}
