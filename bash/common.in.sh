@@ -9,7 +9,7 @@ echo_color() {
     color="$1"
     shift
     text="$@"
-    echo -e "[${color}$text${NOCOLOR}]";
+    echo -e "${color}$text${NOCOLOR}";
 }
 
 show_and_exec(){

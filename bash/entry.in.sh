@@ -16,15 +16,17 @@ include_order=$(cat <<EOF
   ssh-agent.in.sh
   emacs-cleaner.in.sh
   routing-phone-deviation.in.sh
+  proxy.in.sh
+  lille1.in.sh
 EOF
 )
 
 for include in $include_order; do
   fullpath=$DOTFILES_DIR/bash/$include
   if [ -f "$fullpath" ]; then
-    is_debug && echo_color $CYAN [DEBUG] sourcing $fullpath
+    is_debug && echo [DEBUG] sourcing $fullpath
     . $fullpath
   else
-    is_debug && echo_color $RED [DEBUG] "can't source $fullpath"
+    is_debug && echo [ERROR] "can't source $fullpath"
   fi
 done
