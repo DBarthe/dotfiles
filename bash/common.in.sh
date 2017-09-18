@@ -31,3 +31,10 @@ ensure_line_exists() {
   grep -q -F "$1" "$2" \
     || echo "$1" >> "$2"
 }
+
+is_interactive() {
+  case "$-" in
+  *i*) return 0 ;;
+  *) return 1 ;;
+  esac
+}

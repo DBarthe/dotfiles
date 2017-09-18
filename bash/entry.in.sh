@@ -1,6 +1,6 @@
 DOTFILES_DIR=$HOME/dotfiles
 
-DEBUG=false
+DEBUG=true
 is_debug() {
   if [ "x$DEBUG" = "xtrue" ]; then
     return 0

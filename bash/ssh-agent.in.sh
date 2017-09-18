@@ -1,6 +1,9 @@
 ###########
 # ssh-agent
 ###########
+
+is_interactive || return
+
 SSH_ENV="$HOME/.ssh/environment"
 
 function start_agent {
