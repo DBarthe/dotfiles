@@ -1,4 +1,11 @@
+# If not running interactively, don't do anything
+case $- in
+    *i*) ;;
+      *) return;;
+esac
+
 DOTFILES_DIR=$HOME/dotfiles
+ASSETS_DIR=$DOTFILES_DIR/bash/assets
 
 DEBUG=false
 is_debug() {
