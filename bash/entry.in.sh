@@ -25,6 +25,7 @@ include_order=$(cat <<EOF
   routing-phone-deviation.in.sh
   proxy.in.sh
   lille1.in.sh
+  git.in.sh
 EOF
 )
 
