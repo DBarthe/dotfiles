@@ -26,6 +26,7 @@ include_order=$(cat <<EOF
   proxy.in.sh
   lille1.in.sh
   git.in.sh
+  k8s.in.sh
 EOF
 )
 
